@@ -1,6 +1,6 @@
 descriptorVersion: v4
-image: jangalian/spid-bundle:1.2.0
-dbms: postgresql
+image: jangalian/spid-bundle:1.2.1
+dbms: none
 healthCheckPath: "/management/health"
 roles:
     - "spid-admin"
@@ -17,7 +17,7 @@ environmentVariables:
             secretKeyRef:
                 name: ad14e819-spid-configuration
                 key: _OTHER_CONTACT_IS_SP_PRIVATE
-                
+
     -   name: ORGANIZATION_NAMES
         valueFrom:
             secretKeyRef:
