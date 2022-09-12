@@ -1,5 +1,5 @@
 descriptorVersion: v4
-image: jangalian/spid-bundle:1.2.5
+image: jangalian/spid-bundle:1.2.7
 dbms: none
 healthCheckPath: "/management/health"
 roles:
